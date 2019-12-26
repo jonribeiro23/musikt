@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.content-side{
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+
+.footer-side{
+	padding-bottom: 200px;
+	padding-top: 200px;
+	background-color: black;
+	color: blanchedalmond;
+}
+
+.black-border{
+	-webkit-text-stroke-width: 0.75px;
+	-webkit-text-stroke-color: black;
+}
+
+.t-20{
+	font-size: 1.6em;
+}
+
+.img-30{
+	width: 20%;
+}
+
+.navbar-light{
+  background-color: #79CBFF;
+}

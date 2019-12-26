@@ -3,6 +3,12 @@
     padding: 0;
 }
 
+#menu{
+  position: sticky;
+	top: 0;
+  z-index: 1000;
+}
+
 .header-side{
 	background-image: url(../img/decorativo/capa.png);
 	background-position: center top;
