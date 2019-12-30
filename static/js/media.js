@@ -1,10 +1,12 @@
 function myFunction(x) {
+
   if (x.matches) {
     // document.body.style.backgroundColor = "yellow";
     let col1 = document.querySelectorAll('#col1')
     let col2 = document.querySelectorAll('#col2')
     let mg = document.querySelectorAll('#mg')
     let curso = document.querySelectorAll('#curso')
+    let redesocial = document.querySelectorAll('.img-30')
 
     col1.forEach((x) => {
       x.classList.remove("col-8")
@@ -23,11 +25,17 @@ function myFunction(x) {
       x.setAttribute('class', 'col-12')
     })
 
+    redesocial.forEach((x) => {
+      x.classList.remove('img-30')
+      x.setAttribute('class', 'img-60')
+    })
+
   } else {
 
     let col1 = document.querySelectorAll('#col1')
     let col2 = document.querySelectorAll('#col2')
     let curso = document.querySelectorAll('#curso')
+    let redesocial = document.querySelectorAll('.img-60')
 
     col1.forEach((x) => {
       x.setAttribute('class', 'col-8')
@@ -42,8 +50,11 @@ function myFunction(x) {
       x.setAttribute('class', 'col-4')
     })
 
+    redesocial.forEach((x) => {
+      x.classList.remove('img-60')
+      x.setAttribute('class', 'img-30')
+    })
 
-    // document.body.style.backgroundColor = "pink";
   }
 }
 
