@@ -10,7 +10,8 @@ async function save(){
 
 async function connect(){
   event.preventDefault();
-  const url = 'http://localhost:5000/'
+  // const url = 'http://localhost:5000/'
+  const url = 'https://musik-back.herokuapp.com/'
 
   const nome = document.querySelector('#nome')
   const email = document.querySelector('#email')
@@ -43,6 +44,15 @@ async function connect(){
     success: (e)=>{
       if (e.status == 'ok'){
         window.location.href = e.msg
+      }
+
+      if (e.status == 'err'){
+        $('#wait').modal('hide')
+        let msg_erro = document.querySelector('#msg-erro')
+        let p = document.createElement('p')
+        p.innerText = e.msg
+        msg_erro.appendChild(p)
+        $('#erro').modal('show')
       }
     }
   })
